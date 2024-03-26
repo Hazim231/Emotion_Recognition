@@ -23,9 +23,9 @@ def main():
 
         # Generate content with vision model
         vision_model = genai.GenerativeModel('gemini-pro-vision')
-        response = vision_model.generate_content(["what is the emotions on this images using keyword happy, sad, angry, surprise, neutral, anxiety", image])
+        response = vision_model.generate_content(["what is the emotions on this images using keyword Happiness, Sadness, Anger, Surprise, Neutral, Anxiety , Disgust, Jealosuy, Guilt, Embarrassment", image])
 
-        st.markdown(response.text)
+        st.markdown(response.text) 
 
 if __name__ == "__main__":
     main()
